@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         String strX = etX.getText().toString();
         String strY = etY.getText().toString();
 
-        double x = Double.parseDouble(strX);
-        double y = Double.parseDouble(strY);
+        int x = Integer.parseInt(strX);
+        int y = Integer.parseInt(strY);
 
-        String sum = Double.toString(x+y);
+        String sum = Integer.toString(x+y);
         result.setText(sum);
 
         Button button = findViewById(R.id.btn);
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(
                         MainActivity.this,
                         ResultActivity.class);
-                intent.putExtra("sum", result.getText());
+                intent.putExtra("resultat", result.getText());
                 startActivity(intent);
             }
         });

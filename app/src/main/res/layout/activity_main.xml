@@ -12,14 +12,16 @@
         android:layout_height="48dp"
         android:fontFamily="@font/gilroy_medium"
         android:gravity="center"
-        android:text="0"
+        android:text="@string/first"
         android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397" />
+        app:layout_constraintVertical_bias="0.397"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor,TextFields" />
 
     <EditText
         android:id="@+id/txt2"
@@ -27,14 +29,16 @@
         android:layout_height="48dp"
         android:fontFamily="@font/gilroy_medium"
         android:gravity="center"
-        android:text="0"
+        android:text="@string/second"
         android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535" />
+        app:layout_constraintVertical_bias="0.535"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor,TextFields"/>
 
     <Button
         android:id="@+id/btn"
@@ -42,8 +46,8 @@
         android:layout_height="79dp"
         android:backgroundTint="@color/blue"
         android:fontFamily="@font/gilroy_medium"
-        android:text="СЛОЖИТЬ"
-        android:textSize="30dp"
+        android:text="@string/slog"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"

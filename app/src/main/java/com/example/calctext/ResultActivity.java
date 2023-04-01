@@ -13,6 +13,6 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         TextView result = findViewById(R.id.output);
-        result.setText(getIntent().getStringExtra("sum"));
+        result.setText(getIntent().getStringExtra("resultat"));
     }
 }
