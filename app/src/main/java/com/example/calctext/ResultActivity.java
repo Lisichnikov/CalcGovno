@@ -12,7 +12,19 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        TextView result = findViewById(R.id.output);
-        result.setText(getIntent().getStringExtra("resultat"));
+        TextView answer = findViewById(R.id.output);
+        try {
+            String etX = getIntent().getExtras().getString("firsted");
+            String etY = getIntent().getExtras().getString("seconded");
+            int stY = Integer.parseInt(etY);
+            int result = (Integer.parseInt(etX) + (Integer.parseInt(etY)));
+            if (stY > 0) {
+                answer.setText(etX + " + " + etY + " = " + result);
+            } else {
+                answer.setText(etX + " + " + "(" + etY + ")" + " = " + result);
+            }
+        }catch (NumberFormatException e){
+            answer.setText("Ты дурак, иди попу нюхай!");
+        }
     }
 }

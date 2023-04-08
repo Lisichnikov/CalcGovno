@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CalcText</string>
+    <string name="app_name">Текстовый калькулятор</string>
     <string name="slog">СЛОЖИТЬ</string>
     <string name="second">второе число</string>
     <string name="first">первое число</string>

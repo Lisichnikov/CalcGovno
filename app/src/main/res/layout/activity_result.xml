@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context=".ResultActivity">
 
     <TextView
         android:id="@+id/output"
-        android:layout_width="278dp"
+        android:layout_width="378dp"
         android:layout_height="100dp"
-        android:text="@string/zero"
         android:textColor="@color/blue"
         android:gravity="center"
         android:fontFamily="@font/gilroy_medium"
-        android:textSize="80sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"

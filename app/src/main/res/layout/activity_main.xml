@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context=".MainActivity">
 
     <EditText
@@ -12,15 +13,16 @@
         android:layout_height="48dp"
         android:fontFamily="@font/gilroy_medium"
         android:gravity="center"
-        android:text="@string/first"
-        android:textColor="@color/blue"
+        android:importantForAutofill="no"
+        android:hint="@string/first"
+        android:textColorHint="@color/blue"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397"
-        android:importantForAutofill="no"
+        app:layout_constraintVertical_bias="0.377"
         tools:ignore="LabelFor,TextFields" />
 
     <EditText
@@ -29,8 +31,9 @@
         android:layout_height="48dp"
         android:fontFamily="@font/gilroy_medium"
         android:gravity="center"
-        android:text="@string/second"
-        android:textColor="@color/blue"
+        android:hint="@string/second"
+        android:textColorHint="@color/blue"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
@@ -48,21 +51,13 @@
         android:fontFamily="@font/gilroy_medium"
         android:text="@string/slog"
         android:textSize="30sp"
+        android:textColor="@color/lightblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
-    <TextView
-        android:id="@+id/rese"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintVertical_bias="0.685" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
